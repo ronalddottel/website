@@ -1,0 +1,186 @@
+
+
+html, body
+{
+  height: 100%;
+  width: 100%;
+}
+
+#hero
+{
+  background: url('../img/mouse.jpg');
+  background-size: cover;
+  background-position: center;
+  border-width: 10px;
+  border-style: ridge;
+  border-color:#154E77;
+  height:100%;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#hero:hover
+{
+box-shadow: -10px -10px 0 #5A0031;
+transform: translate(10px, 10px);
+transition-duration: 1s;
+}
+/* text in hero*/
+#hero > h1
+{
+  color: lightblue;
+  font-family: cursive;
+  font-size:50px;
+}
+
+#hero > h2
+{
+  color: white;
+  font-family: cursive;
+}
+
+#hero > h1:hover
+{
+  -webkit-animation: color-change 5s infinite;
+  color: lightblue;
+  font-family: cursive;
+  font-size:50px;
+}
+@-webkit-keyframes color-change
+{
+  0% {color: lightblue;}
+  25% {color: red;}
+  50% {color:yellow;}
+  100% { color: lightblue; }
+  }
+
+ button
+ {
+   width: 100px;
+   height: 30px;
+   font-size: 15px;
+   background-color: black;
+   color: white;
+   font-family: cursive;
+   border-width: medium;
+   border-color: white;
+}
+button:hover
+{
+  background-color:grey;
+  font-size: 10px;
+}
+
+/*Navigation menu*/
+
+.custom-nav
+{
+  background: black;
+  height: 50px;
+  width: 100%;
+  border-style: ridge;
+  border-color: lightblue;
+}
+.custom-nav #links, #logo
+{
+  display: inline-block;
+}
+.custom-nav #links
+{
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top:0;
+  right: 0;
+}
+
+.custom-nav #links > li
+{
+  color: white;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.custom-nav #links:hover > li
+{
+  color:orange;
+}
+
+.info #heading
+{
+  background-color:#659EC7;
+  border-style: ridge;
+  border-color:  #154E77;
+  border-width: 10px;
+  width: 100%;
+}
+
+.info #heading:hover
+{
+box-shadow: -10px -10px 0 #5A0031;
+transform: translate(10px, 10px);
+transition-duration: 1s;
+}
+
+.info #heading > h1
+{
+  font-family:cursive;
+  color: white;
+  text-align: center;
+}
+.info #heading > img
+{
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+
+.info #heading > p
+{
+  font-family: cursive;
+  color: #003059;
+  font-size: 20px;
+  text-align: center;
+}
+
+.info #java
+{
+  background-color:#0B446D;
+  border-style: ridge;
+  border-color:  #154E77;
+  border-width: 10px;
+  width: 100%;
+}
+
+.info #java > h1
+{
+  color: white;
+  text-align: center
+}
+
+.info #java > img
+{
+  display: block;
+  margin: auto;
+  width: 75px;
+  height: 130px;
+}
+
+.info #java > p
+{
+  color: #659EC7;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+.info #java:hover
+{
+box-shadow: -10px -10px 0 #5A0031;
+transform: translate(10px, 10px);
+transition-duration: 1s;
+}
